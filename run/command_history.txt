@@ -1,0 +1,5 @@
+/summon minecraft:warden ~ ~ ~ {NoAI:1}
+/gamemode survival
+/gamemode creative
+/time set day
+/gamerule doDaylightCycle false

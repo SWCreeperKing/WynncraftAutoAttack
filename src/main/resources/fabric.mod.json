@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "wynnautoattack",
+  "version": "${version}",
+  "name": "Wynncraft Auto Attack",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/wynnautoattack/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.github.swcreeperking.wynnautoattack.client.WynnautoattackClient"
+    ],
+    "main": [
+      "com.github.swcreeperking.wynnautoattack.Wynnautoattack"
+    ]
+  },
+  "mixins": [
+    "wynnautoattack.mixins.json",
+    {
+      "config": "wynnautoattack.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
